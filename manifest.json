@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json.schemastore.org/chrome-manifest",
+	"manifest_version": 3,
+	"name": "Smart Highlight",
+	"description": "A extension for information about what you're highlighting on a webpage",
+	"version": "1.0",
+	"permissions": ["contextMenus", "activeTabs"],
+	"action": {
+		"default_popup": "dist/index.html"
+	},
+	"background": {
+		"service_worker": "service_worker.js",
+		"type": "module"
+	}
+}
